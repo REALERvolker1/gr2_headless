@@ -1,4 +1,6 @@
-# Ghostrunner 2 ground truth lab
+# Ghostrunner 2 Headless Modding Environment
+
+# WARNING: This project is entirely AI generated
 
 Run the owned GR2 implementation through headless Gamescope and Xdotool, with UE4SS commands for travel, measured geometry, player reset, spawning, and JSONL telemetry. Each launch starts with a disposable copy of the campaign save. Game files and the canonical save are mounted read-only inside the game process.
 
