@@ -1,0 +1,490 @@
+{
+  "combat": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "combat",
+    "audio_time": 2.1336700916290283,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": 0
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 0,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": true,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -4500,
+      "y": 50000,
+      "z": 10098.150390625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 2.014261245727539,
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  },
+  "gaps": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "gaps",
+    "audio_time": 2.6395184993743896,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": 0
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 0,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": true,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -4500,
+      "y": 10000,
+      "z": 10098.150390625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 2.5201094150543213,
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  },
+  "grapple": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "grapple",
+    "audio_time": 3.24735426902771,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": 0
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 0,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": true,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -4500,
+      "y": 40000,
+      "z": 10098.150390625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 3.1279451847076416,
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  },
+  "physics": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "physics",
+    "audio_time": 3.7565062046051025,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": 0
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 0,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": true,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -4500,
+      "y": 70000,
+      "z": 10098.150390625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 3.637097120285034,
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  },
+  "resources": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "resources",
+    "audio_time": 4.367608547210693,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": 0
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 0,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": true,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -4500,
+      "y": 60000,
+      "z": 10098.150390625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 4.248198986053467,
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  },
+  "runway": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "runway",
+    "audio_time": 4.7732415199279785,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": 0
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 0,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": true,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -4500,
+      "y": 0,
+      "z": 10098.150390625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 4.653831958770752,
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  },
+  "terrain": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "terrain",
+    "audio_time": 5.282272815704346,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": 0
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 0,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": true,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -4500,
+      "y": 30000,
+      "z": 10098.150390625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 5.162863254547119,
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  },
+  "walls": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "walls",
+    "audio_time": 5.688133716583252,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": 0
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 0,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": true,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -4500,
+      "y": 20000,
+      "z": 10098.150390625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 5.568724155426025,
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  }
+}

@@ -1,0 +1,382 @@
+[
+  {
+    "launch": 1,
+    "areas": [
+      "combat",
+      "gaps",
+      "grapple",
+      "physics",
+      "resources",
+      "runway",
+      "terrain",
+      "walls"
+    ],
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "walk_cm": 940.520263671875,
+    "samples": 23,
+    "canonical_unchanged": true,
+    "physics": {
+      "cube": {
+        "x": 0.0005122424336150289,
+        "y": 70000,
+        "z": 10050
+      },
+      "cube_velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "platform": {
+        "x": 2456.499755859375,
+        "y": 70000,
+        "z": 10300
+      }
+    },
+    "wallrun_observed": true,
+    "mouse_yaw_before": 0,
+    "mouse_yaw_after": 31.781429290771484,
+    "upgrades": {
+      "core_level": 0,
+      "motherboard": {
+        "Branches": {
+          "count": 5,
+          "entries": [
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 123,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 109,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 58,
+                    "bIsBoosted": true
+                  },
+                  {
+                    "State": 1,
+                    "Type": 108,
+                    "bIsBoosted": true
+                  }
+                ],
+                "truncated": false
+              }
+            },
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 121,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 125,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 0,
+                    "Type": 255,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 140,
+                    "bIsBoosted": false
+                  }
+                ],
+                "truncated": false
+              }
+            },
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 113,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 79,
+                    "bIsBoosted": true
+                  },
+                  {
+                    "State": 1,
+                    "Type": 112,
+                    "bIsBoosted": true
+                  },
+                  {
+                    "State": 1,
+                    "Type": 86,
+                    "bIsBoosted": false
+                  }
+                ],
+                "truncated": false
+              }
+            },
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 69,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 128,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 0,
+                    "Type": 255,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 118,
+                    "bIsBoosted": false
+                  }
+                ],
+                "truncated": false
+              }
+            },
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 74,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 139,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 124,
+                    "bIsBoosted": true
+                  },
+                  {
+                    "State": 1,
+                    "Type": 57,
+                    "bIsBoosted": true
+                  }
+                ],
+                "truncated": false
+              }
+            }
+          ],
+          "truncated": false
+        },
+        "RequiredTier": 8
+      },
+      "object": "BP_UpgradesSubsystem_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:BP_UpgradesSubsystem_C_2147481725"
+    }
+  },
+  {
+    "launch": 2,
+    "areas": [
+      "combat",
+      "gaps",
+      "grapple",
+      "physics",
+      "resources",
+      "runway",
+      "terrain",
+      "walls"
+    ],
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "walk_cm": 934.271728515625,
+    "samples": 25,
+    "canonical_unchanged": true,
+    "physics": {
+      "cube": {
+        "x": 0.00030857283854857087,
+        "y": 70000,
+        "z": 10050
+      },
+      "cube_velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "platform": {
+        "x": 2490.797607421875,
+        "y": 70000,
+        "z": 10300
+      }
+    },
+    "wallrun_observed": true,
+    "mouse_yaw_before": 0,
+    "mouse_yaw_after": 31.54381561279297,
+    "upgrades": {
+      "core_level": 0,
+      "motherboard": {
+        "Branches": {
+          "count": 5,
+          "entries": [
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 123,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 109,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 58,
+                    "bIsBoosted": true
+                  },
+                  {
+                    "State": 1,
+                    "Type": 108,
+                    "bIsBoosted": true
+                  }
+                ],
+                "truncated": false
+              }
+            },
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 121,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 125,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 0,
+                    "Type": 255,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 140,
+                    "bIsBoosted": false
+                  }
+                ],
+                "truncated": false
+              }
+            },
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 113,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 79,
+                    "bIsBoosted": true
+                  },
+                  {
+                    "State": 1,
+                    "Type": 112,
+                    "bIsBoosted": true
+                  },
+                  {
+                    "State": 1,
+                    "Type": 86,
+                    "bIsBoosted": false
+                  }
+                ],
+                "truncated": false
+              }
+            },
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 69,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 128,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 0,
+                    "Type": 255,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 118,
+                    "bIsBoosted": false
+                  }
+                ],
+                "truncated": false
+              }
+            },
+            {
+              "Sockets": {
+                "count": 4,
+                "entries": [
+                  {
+                    "State": 1,
+                    "Type": 74,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 139,
+                    "bIsBoosted": false
+                  },
+                  {
+                    "State": 1,
+                    "Type": 124,
+                    "bIsBoosted": true
+                  },
+                  {
+                    "State": 1,
+                    "Type": 57,
+                    "bIsBoosted": true
+                  }
+                ],
+                "truncated": false
+              }
+            }
+          ],
+          "truncated": false
+        },
+        "RequiredTier": 8
+      },
+      "object": "BP_UpgradesSubsystem_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:BP_UpgradesSubsystem_C_2147481725"
+    }
+  }
+]

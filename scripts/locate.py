@@ -1,0 +1,187 @@
+#!/usr/bin/env python3
+"""Locate Steam, Ghostrunner 2, Proton, and prefix paths; write lab.toml."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+import re
+import sys
+import tomllib
+from dataclasses import replace
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.lab import ROOT, Config  # noqa: E402
+
+APP_ID = "2144740"
+GAME = "Ghostrunner 2"
+BINARY = "Ghostrunner2/Binaries/Win64/Ghostrunner2-Win64-Shipping.exe"
+LIBRARY_PATH = re.compile(r'^\s*"path"\s+"(.+)"\s*$')
+
+
+def steam_roots(home: Path) -> list[Path]:
+    """Native and Flatpak Steam client roots that exist on this host."""
+    candidates = (
+        home / ".steam/steam",
+        home / ".steam/root",
+        home / ".local/share/Steam",
+        home / ".var/app/com.valvesoftware.Steam/data/Steam",
+        home / ".var/app/com.valvesoftware.Steam/.local/share/Steam",
+    )
+    roots: list[Path] = []
+    for candidate in candidates:
+        resolved = candidate.expanduser().resolve()
+        if resolved.is_dir() and resolved not in roots:
+            roots.append(resolved)
+    return roots
+
+
+def library_roots(steam: Path) -> list[Path]:
+    """The client root plus every library listed in libraryfolders.vdf."""
+    libraries = [steam]
+    manifest = steam / "steamapps/libraryfolders.vdf"
+    try:
+        lines = manifest.read_text(errors="replace").splitlines()
+    except FileNotFoundError:
+        return libraries
+    for line in lines:
+        match = LIBRARY_PATH.match(line)
+        if match is None:
+            continue
+        library = Path(match.group(1).replace("\\\\", "\\")).expanduser()
+        if library.is_dir() and library not in libraries:
+            libraries.append(library)
+    return libraries
+
+
+def find_proton(libraries: list[Path]) -> Path | None:
+    """Prefer GE-Proton, then other custom tools, then stock Proton."""
+    candidates: list[Path] = []
+    for library in libraries:
+        for pattern in ("compatibilitytools.d/*/proton", "steamapps/common/Proton*/proton"):
+            candidates.extend(sorted(library.glob(pattern)))
+    candidates = [candidate for candidate in candidates if candidate.is_file()]
+
+    def rank(path: Path) -> tuple[int, str]:
+        name = path.parent.name.lower()
+        if "ge" in name:
+            return (0, name)
+        if "experimental" in name:
+            return (2, name)
+        return (1, name)
+
+    return min(candidates, key=rank) if candidates else None
+
+
+def default_state(home: Path) -> Path:
+    base = os.environ.get("XDG_STATE_HOME")
+    return (Path(base) if base else home / ".local/state") / "gr2_headless"
+
+
+def qualified_sha256() -> str:
+    """The executable hash recorded by the example config."""
+    with (ROOT / "lab.example.toml").open("rb") as stream:
+        return str(tomllib.load(stream)["game_sha256"]).lower()
+
+
+def qualify(config: Config, qualified: str) -> Config:
+    """Blank the hash unless the installed executable is the qualified build."""
+    return config if config.game_sha256 == qualified else replace(config, game_sha256="")
+
+
+def discover(home: Path, *, steam: Path | None = None, state: Path | None = None) -> Config:
+    """Build a Config from the Steam installation containing the game."""
+    roots = [steam.expanduser().resolve()] if steam is not None else steam_roots(home)
+    if not roots:
+        raise RuntimeError(
+            "No Steam installation found under ~/.steam, ~/.local/share/Steam, "
+            "or a Flatpak data directory"
+        )
+    libraries = {root: library_roots(root) for root in roots}
+    all_libraries = list(
+        dict.fromkeys(library for found in libraries.values() for library in found)
+    )
+    for root, found in libraries.items():
+        for library in found:
+            game = library / "steamapps/common" / GAME
+            binary = game / BINARY
+            canonical = library / "steamapps/compatdata" / APP_ID
+            if not binary.is_file() or not canonical.is_dir():
+                continue
+            proton = find_proton(all_libraries)
+            if proton is None:
+                raise RuntimeError(
+                    "Found Ghostrunner 2 but no Proton launcher; install GE-Proton "
+                    "or set proton in lab.toml by hand"
+                )
+            return Config(
+                game=game,
+                proton=proton,
+                seed_prefix=canonical,
+                canonical_prefix=canonical,
+                steam=root,
+                state=(state or default_state(home)).expanduser().resolve(),
+                game_sha256=hashlib.sha256(binary.read_bytes()).hexdigest(),
+            )
+    raise RuntimeError(
+        "Ghostrunner 2 was not found in any Steam library; install it or edit lab.toml by hand"
+    )
+
+
+def render(config: Config) -> str:
+    return (
+        "# Generated by scripts/locate.py. Regenerate with `python3 scripts/locate.py`.\n"
+        "# Machine paths are intentionally not committed; lab.toml is ignored.\n"
+        "\n"
+        f"game = {json.dumps(str(config.game))}\n"
+        f"proton = {json.dumps(str(config.proton))}\n"
+        f"seed_prefix = {json.dumps(str(config.seed_prefix))}\n"
+        f"canonical_prefix = {json.dumps(str(config.canonical_prefix))}\n"
+        f"steam = {json.dumps(str(config.steam))}\n"
+        f"state = {json.dumps(str(config.state))}\n"
+        f"game_sha256 = {json.dumps(config.game_sha256)}\n"
+    )
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--steam", type=Path, help="Steam client root to use")
+    parser.add_argument("--force", action="store_true", help="replace an existing lab.toml")
+    args = parser.parse_args()
+    target = ROOT / "lab.toml"
+    if target.exists() and not args.force:
+        raise SystemExit(f"{target} exists; rerun with --force to replace it")
+    try:
+        config = discover(Path.home(), steam=args.steam)
+    except RuntimeError as error:
+        raise SystemExit(str(error)) from error
+    qualified = qualified_sha256()
+    if config.game_sha256 != qualified:
+        print(
+            f"Installed executable hash {config.game_sha256} is not the qualified build "
+            f"{qualified}; writing an empty game_sha256 so prepare refuses to run. "
+            "Qualify the build before setting it.",
+            file=sys.stderr,
+        )
+        config = qualify(config, qualified)
+    target.write_text(render(config))
+    print(
+        json.dumps(
+            {
+                "lab_toml": str(target),
+                "game": str(config.game),
+                "proton": str(config.proton),
+                "state": str(config.state),
+                "game_sha256": config.game_sha256,
+                "qualified": bool(config.game_sha256),
+            },
+            indent=2,
+        )
+    )
+
+
+if __name__ == "__main__":
+    main()

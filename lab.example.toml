@@ -1,0 +1,32 @@
+# Machine paths for this host. Copy to lab.toml, or let scripts/locate.py write it.
+#
+#   python3 scripts/locate.py
+#
+# lab.toml is ignored because every path here is machine-specific. Runtime files
+# are disposable and never installed into Steam.
+
+# Steam library containing Ghostrunner 2 (app 2144740).
+game = '/path/to/steamapps/common/Ghostrunner 2'
+
+# Proton launcher used to run the staged executable.
+proton = '/path/to/Steam/compatibilitytools.d/Proton-GE/proton'
+
+# Prefix used only as a copy source for the disposable lab prefix. locate.py
+# sets this to canonical_prefix; point it at an existing prepared prefix if you
+# have one.
+seed_prefix = '/path/to/steamapps/compatdata/2144740'
+
+# Read-only source of the canonical campaign save. Never the lab prefix.
+canonical_prefix = '/path/to/steamapps/compatdata/2144740'
+
+# Steam client root, used for STEAM_COMPAT_CLIENT_INSTALL_PATH and userdata.
+steam = '/path/to/Steam'
+
+# Writable lab state. Keep this on local disk, not a network filesystem.
+state = '/home/you/.local/state/gr2_headless'
+
+# SHA-256 of Ghostrunner2-Win64-Shipping.exe for the qualified build 16083277.
+# scripts/locate.py copies this into lab.toml only when the installed executable
+# matches; a different build is written empty so prepare refuses to run until it
+# has been qualified.
+game_sha256 = '3900626fe173ec8f22c963876137b207c85ba0911b82ba17696b9e5e4a49af85'

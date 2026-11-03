@@ -1,0 +1,289 @@
+{
+  "experiment": "wallrun",
+  "before": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "walls",
+    "audio_time": 11.426068305969238,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": 0
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 0,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": true,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -3000,
+      "y": 19600.125,
+      "z": 10098.1494140625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 11.171853065490723,
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  },
+  "after": {
+    "acceleration": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "area": "walls",
+    "audio_time": 12.897915840148926,
+    "control_rotation": {
+      "pitch": 0,
+      "roll": 9.298324584960938e-06,
+      "yaw": 0.5216222405433655
+    },
+    "custom_movement_mode": 0,
+    "movement_mode": 1,
+    "movement_state": {},
+    "pawn": "BP_PlayerCharacter_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:PersistentLevel.BP_PlayerCharacter_C_2147481025",
+    "player_state": {
+      "CurrentDashCooldown": 0,
+      "CurrentJumpType": 10,
+      "DashCharges": 1,
+      "DashCooldown": 0.25,
+      "JumpCurrentCount": 0,
+      "JustUsedSlide": true,
+      "MoveForwardInput": 0,
+      "MoveRightInput": 0,
+      "bCanStartSlide": true,
+      "bCanWallrun": false,
+      "bIsAirDashReady": true,
+      "bIsClimbingWall": false,
+      "bIsCrouched": false,
+      "bIsDashReady": true,
+      "bIsDashing": false,
+      "bIsDashingInAir": false,
+      "bIsInSensoryBoost": false,
+      "bOnWall": false,
+      "bPressedJump": false,
+      "bWallOnLeft": false,
+      "bWallOnRight": false
+    },
+    "position": {
+      "x": -1994.8697509765625,
+      "y": 19607.4765625,
+      "z": 10098.150390625
+    },
+    "stamina": 100,
+    "stamina_state": {
+      "AirDashStaminaCost": 40,
+      "DashCooldown": 0.20000000298023224,
+      "DashLastTimeUsed": 0,
+      "DashStaminaCost": 40,
+      "SensoryBoostStaminaUsed": 0
+    },
+    "time": 12.64370059967041,
+    "velocity": {
+      "x": 306.4149475097656,
+      "y": 3.050802230834961,
+      "z": 0
+    },
+    "world": "World /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo"
+  },
+  "upgrades": {
+    "core_level": 0,
+    "motherboard": {
+      "Branches": {
+        "count": 5,
+        "entries": [
+          {
+            "Sockets": {
+              "count": 4,
+              "entries": [
+                {
+                  "State": 1,
+                  "Type": 123,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 1,
+                  "Type": 109,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 1,
+                  "Type": 58,
+                  "bIsBoosted": true
+                },
+                {
+                  "State": 1,
+                  "Type": 108,
+                  "bIsBoosted": true
+                }
+              ],
+              "truncated": false
+            }
+          },
+          {
+            "Sockets": {
+              "count": 4,
+              "entries": [
+                {
+                  "State": 1,
+                  "Type": 121,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 1,
+                  "Type": 125,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 0,
+                  "Type": 255,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 1,
+                  "Type": 140,
+                  "bIsBoosted": false
+                }
+              ],
+              "truncated": false
+            }
+          },
+          {
+            "Sockets": {
+              "count": 4,
+              "entries": [
+                {
+                  "State": 1,
+                  "Type": 113,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 1,
+                  "Type": 79,
+                  "bIsBoosted": true
+                },
+                {
+                  "State": 1,
+                  "Type": 112,
+                  "bIsBoosted": true
+                },
+                {
+                  "State": 1,
+                  "Type": 86,
+                  "bIsBoosted": false
+                }
+              ],
+              "truncated": false
+            }
+          },
+          {
+            "Sockets": {
+              "count": 4,
+              "entries": [
+                {
+                  "State": 1,
+                  "Type": 69,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 1,
+                  "Type": 128,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 0,
+                  "Type": 255,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 1,
+                  "Type": 118,
+                  "bIsBoosted": false
+                }
+              ],
+              "truncated": false
+            }
+          },
+          {
+            "Sockets": {
+              "count": 4,
+              "entries": [
+                {
+                  "State": 1,
+                  "Type": 74,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 1,
+                  "Type": 139,
+                  "bIsBoosted": false
+                },
+                {
+                  "State": 1,
+                  "Type": 124,
+                  "bIsBoosted": true
+                },
+                {
+                  "State": 1,
+                  "Type": 57,
+                  "bIsBoosted": true
+                }
+              ],
+              "truncated": false
+            }
+          }
+        ],
+        "truncated": false
+      },
+      "RequiredTier": 8
+    },
+    "object": "BP_UpgradesSubsystem_C /Game/Maps/TestLevels/Levels_Zoo.Levels_Zoo:BP_UpgradesSubsystem_C_2147481725"
+  },
+  "game_sha256": "3900626fe173ec8f22c963876137b207c85ba0911b82ba17696b9e5e4a49af85",
+  "harness_sha256": {
+    "Scripts/areas.lua": "8c60f15886ab198617133b04405dd6bfca4572c29f2cfcbfb83680edf6c231d8",
+    "Scripts/copy.lua": "1c751aaaa35effaa565426368375cb3ef017d12e184765f4b5d0af48443f6219",
+    "Scripts/gr2_json.lua": "b04d9aec12fb95a1e3231b03c400f1af41a9440d0b95e5af959b071de94f1d30",
+    "Scripts/main.lua": "3f85093ac48ce1262bc5549ddbf8754f37625645b87fb9d5c2455d4524697b8f",
+    "Scripts/ue4ss_api.lua": "8f5c40eea71b7fd1786db539c9abcb08e10bd7a3c537f49394920757f059e60d"
+  },
+  "runner_sha256": "bf6f0db8bb7287ff3129a291549c0b57b7a9c9decaff39418ac4a1c48518d941",
+  "proton_version": "1762104463 GE-Proton10-25",
+  "canonical_unchanged": true
+}

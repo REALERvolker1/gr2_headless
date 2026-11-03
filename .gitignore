@@ -1,0 +1,12 @@
+.work/
+lab.toml
+__pycache__/
+.venv/
+.mypy_cache/
+.ruff_cache/
+*.sav
+*.pak
+*.uasset
+*.uexp
+*.umap
+*.dmp
